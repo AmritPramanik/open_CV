@@ -25,9 +25,9 @@ img = cv2.imread('img/image.png')
 
 
 # Stack color channels
-imBlue = img[:,:,0]
-imGreen = img[:,:,1]
-imRed = img[:,:,2]
+imBlue = img[:,:,0]  # it only containe Blue
+imGreen = img[:,:,1] # it only containe Green
+imRed = img[:,:,2]   # it only containe Red
 
 new_img = np.hstack((imBlue,imGreen,imRed))
 display(new_img)
